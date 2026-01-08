@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# VS Code
+.vscode/
+
+# Playwright browsers
+playwright/.local-browsers/
+
+# pytest cache
+.pytest_cache/
+
+# Logs
+*.log
+# Ignore credentials
+data/credentials.json

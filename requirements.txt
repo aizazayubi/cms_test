@@ -1,0 +1,8 @@
+playwright
+pytest
+pytest-playwright
+jsonschema
+faker
+requests
+pydantic
+python-dotenv
