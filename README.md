@@ -6,3 +6,5 @@ Automates key workflows of the garage management software, using Playwright. Thi
 - Login Page
 - Dashboard
 - Create Jobcard Page
+- work order page added
+- 
