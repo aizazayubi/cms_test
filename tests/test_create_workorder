@@ -1,0 +1,22 @@
+def test_create_workorder(login_page, dashboard_page, credentials, page):
+    from pages.workorder_page import WorkOrderPage
+
+    # Login
+    login_page.open(credentials["baseUrl"])
+    login_page.login(credentials["username"], credentials["password"])
+    dashboard_page.wait_loaded()
+
+    # Go to Work Orders
+    workorder_page = WorkOrderPage(page)
+    workorder_page.go_to_new_workorder()
+
+    # Fill work order details
+    workorder_page.fill_workorder(
+        customer="Ali Khan",
+        jobcard="JC-001",
+        task="Engine Oil Change"
+    )
+    workorder_page.submit_workorder()
+    workorder_page.wait_for_success()
+
+    print("Work Order creation test passed!")

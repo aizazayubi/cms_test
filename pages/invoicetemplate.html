@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Turbo City Invoice</title>
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            color: #333;
+        }
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+        /* Yellow and Black Theme */
+        .header-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #000;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .accent-bar {
+            height: 10px;
+            background-color: #FFD700; /* Gold/Yellow */
+            margin-bottom: 20px;
+        }
+        .company-details {
+            text-align: right;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        .invoice-info-grid {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .bill-to {
+            width: 45%;
+        }
+        .vehicle-info {
+            width: 50%;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid #FFD700;
+        }
+        .section-header {
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            text-decoration-color: #FFD700;
+        }
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .items-table th {
+            background-color: #000;
+            color: #FFD700;
+            padding: 12px;
+            text-align: left;
+        }
+        .items-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        .total-section {
+            width: 100%;
+            text-align: right;
+        }
+        .total-row {
+            padding: 10px;
+            font-size: 1.1em;
+        }
+        .grand-total {
+            background-color: #000;
+            color: #FFD700;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.3em;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .footer-section {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .bank-details {
+            font-size: 0.85em;
+            color: #555;
+            background: #fffde7;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            width: 60%;
+        }
+        .signature {
+            text-align: center;
+            width: 30%;
+            border-top: 1px solid #000;
+            padding-top: 10px;
+        }
+        /* Stamp Simulation */
+        .stamp-box {
+            border: 3px double #000080;
+            color: #000080;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 10px;
+            transform: rotate(-10deg);
+            opacity: 0.8;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="invoice-box">
+    [cite_start]<div class="header-title">Professor Turbo City LLC [cite: 7]</div>
+    <div class="accent-bar"></div>
+    
+    <div class="company-details">
+        [cite_start]<strong>Address:</strong> AL QUSAIS, DUBAI [cite: 8]<br>
+        [cite_start]<strong>Phone:</strong> (04)572 1378 [cite: 9][cite_start], 0521561232 [cite: 10]
+    </div>
+
+    <div class="invoice-info-grid">
+        <div class="bill-to">
+            [cite_start]<div class="section-header">INVOICE TO [cite: 2]</div>
+            <p>
+                [cite_start]<strong>Quality Used Car LLC</strong> [cite: 3]<br>
+                [cite_start]Dubai [cite: 3]<br>
+                [cite_start]Phone: [cite: 4]
+            </p>
+        </div>
+
+        <div class="vehicle-info">
+            <div class="section-header">VEHICLE DETAILS</div>
+            <table style="font-size: 0.9em; margin: 0;">
+                <tr>
+                    <td><strong>Vehicle:</strong></td>
+                    [cite_start]<td>Mazda [cite: 5]</td>
+                </tr>
+                <tr>
+                    <td><strong>Chassis No:</strong></td>
+                    [cite_start]<td>JM7KFAWL9R0888863 [cite: 5]</td>
+                </tr>
+                <tr>
+                    <td><strong>Invoice No:</strong></td>
+                    [cite_start]<td>202511190036 [cite: 5]</td>
+                </tr>
+                <tr>
+                    <td><strong>Date:</strong></td>
+                    [cite_start]<td>12/11/2025 [cite: 5]</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <table class="items-table">
+        <thead>
+            <tr>
+                [cite_start]<th>SERVICE DESCRIPTION [cite: 6]</th>
+                [cite_start]<th>QTY [cite: 6]</th>
+                [cite_start]<th>PRICE [cite: 6]</th>
+                [cite_start]<th>TOTAL [cite: 6]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                [cite_start]<td>Painting, Polishing & washing [cite: 6]</td>
+                [cite_start]<td>1 [cite: 6]</td>
+                [cite_start]<td>600 [cite: 6]</td>
+                [cite_start]<td>600 [cite: 6]</td>
+            </tr>
+            <tr>
+                [cite_start]<td>Labour charge [cite: 6]</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="total-section">
+        [cite_start]<div class="total-row"><strong>SUB TOTAL:</strong> AED 600 [cite: 11, 12]</div>
+        [cite_start]<div class="grand-total">GRAND TOTAL: AED 600 [cite: 16, 19]</div>
+        [cite_start]<div style="margin-top: 10px; font-size: 0.9em;">Payment Method: Cash [cite: 13]</div>
+    </div>
+
+    <div class="footer-section">
+        <div class="bank-details">
+            [cite_start]<strong>Account holder:</strong> PROFESSOR TURBO CITY AUTO REPAIRING SERVICES L.L.C [cite: 20]<br>
+            [cite_start]<strong>Account number:</strong> 9993946546 [cite: 20]<br>
+            [cite_start]<strong>IBAN:</strong> AE860860000009993946546 [cite: 20]<br>
+            [cite_start]<strong>BIC:</strong> WIOBAEADXXX [cite: 20]
+        </div>
+
+        <div class="signature">
+            <div class="stamp-box">
+                [cite_start]<p>ACCIOVSTAL REPAIE<br>PROFESSOR TURBO CITY LLC [cite: 17]</p>
+            </div>
+            [cite_start]<strong>SURESH MUTHU [cite: 14]</strong><br>
+            [cite_start]SERVICE DELIVERY MANAGER [cite: 15]<br>
+            <span style="font-size: 0.8em; color: #777;">SIGNATURE AUTHORITY</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
